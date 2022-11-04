@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Book = (props) => {
-    const books = props.books
+    const { books } = props
   return (
     <div className="books-list">
         {books.map((book) => (
