@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './Header.css';
 import Books from './Books';
-import Categories from './Categories.js';
+import Categories from './Categories';
 
 const header = () => (
   <div>
