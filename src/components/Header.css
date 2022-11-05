@@ -1,0 +1,25 @@
+.title {
+  font-size: 40px;
+  color: blue;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0 5%;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.mid-li {
+  border-left: 1px solid blue;
+  padding: 0 7px;
+}
