@@ -1,10 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
-const Book = (props) => {
-  const { books } = props;
+const Book = () => {
+  const books = useSelector((state) => state.books.allBooks);
   const dispatch = useDispatch();
   return (
     <div className="books-list">
@@ -15,14 +14,11 @@ const Book = (props) => {
             Written By
             {book.author}
           </h3>
-          <button type="submit" onClick={() => dispatch(removeBook())}>Remove Book</button>
+          <button type="button" onClick={() => dispatch(removeBook(book.id))}>Remove Book</button>
         </div>
       ))}
     </div>
   );
 };
 
-Book.propTypes = {
-  books: PropTypes.func.isRequired,
-};
 export default Book;
