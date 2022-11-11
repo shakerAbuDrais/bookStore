@@ -1,11 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { React, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeBook, fetchBooks } from '../redux/books/books';
 
-const Book = (props) => {
-  const { books } = props;
+const Book = () => {
+  const books = useSelector((state) => state.books.allBooks);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+  const removeBookHandler = (e) => {
+    dispatch(removeBook(e.target.id));
+    setTimeout(() => dispatch(fetchBooks()), 1000);
+  };
   return (
     <div className="books-list">
       {books.map((book) => (
@@ -15,14 +21,11 @@ const Book = (props) => {
             Written By
             {book.author}
           </h3>
-          <button type="submit" onClick={() => dispatch(removeBook())}>Remove Book</button>
+          <button type="button" onClick={removeBookHandler} id={book.id}>Remove Book</button>
         </div>
       ))}
     </div>
   );
 };
 
-Book.propTypes = {
-  books: PropTypes.func.isRequired,
-};
 export default Book;
