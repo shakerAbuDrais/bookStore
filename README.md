@@ -1,4 +1,4 @@
-# reactMath
+# Books Store
 This is a single page application, created using React JavaScript, and Redux state management, it will display list of books, with the ability to remove current book or add a new book with the title and author.
 
 ## Built With
