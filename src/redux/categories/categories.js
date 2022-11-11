@@ -7,8 +7,8 @@ const categoriesSlice = createSlice({
   },
   reducers: {
     checkStatus: (state) => {
-      const newSatte = state;
-      newSatte.status = 'under construction';
+      const newState = state;
+      newState.status = 'under construction';
     },
   },
 });
