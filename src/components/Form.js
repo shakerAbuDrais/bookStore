@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import './Form.css';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook, fetchBooks } from '../redux/books/books';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -9,11 +9,13 @@ const Form = () => {
   const [author, setAuthor] = useState('');
   const handleSubmit = () => {
     const book = {
-      id: Math.floor(Math.random() * 100),
+      item_id: Math.floor(Math.random() * 100),
       title,
       author,
+      category: 'any',
     };
     dispatch(addBook(book));
+    setTimeout(() => dispatch(fetchBooks()), 500);
     setTitle('');
     setAuthor('');
   };
