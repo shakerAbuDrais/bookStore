@@ -28,8 +28,8 @@
 }
 
 .progress {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 10px solid blue;
   text-align: center;
@@ -78,5 +78,22 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.circle {
+  display: flex;
+  text-align: center;
+}
+
+.percentage {
+  margin-left: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.span {
+  font-size: 1rem;
+  font-weight: 100;
   color: var(--black-two);
 }

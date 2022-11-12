@@ -30,9 +30,13 @@ const Book = () => {
               <button className="main-buttons" type="button">Comments</button>
               <button className="main-buttons" type="button">Edit</button>
             </div>
-            <div className="progress">
-              <p className="inside-circle"> 100% </p>
-              <p> Completed </p>
+            <div className="circle">
+              <div className="progress" />
+              <p className="percentage">
+                100%
+                <br />
+                <span className="span"> Completed </span>
+              </p>
             </div>
             <div>
               <p className="current-chapter">CURRENT CHAPTER</p>
