@@ -7,7 +7,9 @@
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0 5%;
+  padding: 0 3%;
+  box-shadow: 0 2px 3px #ccc;
+  margin-bottom: 20px;
 }
 
 .nav-ul {
@@ -15,7 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   list-style: none;
 }
 
