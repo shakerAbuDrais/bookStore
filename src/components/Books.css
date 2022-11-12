@@ -1,9 +1,13 @@
+* {
+  font-family: 'RobotoSlab', sans-serif;
+}
+
 .book-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 10px;
-  padding: 20px;
+  margin: 10px 22px;
+  padding: 0.9rem 3.3rem 0.9rem 0.9rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 3px #ccc;
@@ -31,17 +35,18 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 10px solid blue;
+  border: 10px solid #0290ff;
   text-align: center;
 }
 
 .current-chapter {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: var(--black-two);
 }
 
 .right-button {
-  background-color: blue;
+  background-color: #0290ff;
   color: white;
   border: none;
   border-radius: 5px;

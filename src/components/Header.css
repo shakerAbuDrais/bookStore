@@ -10,6 +10,13 @@
   padding: 0 3%;
   box-shadow: 0 2px 3px #ccc;
   margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-ul {
@@ -24,4 +31,10 @@
 .mid-li {
   border-left: 1px solid blue;
   padding: 0 7px;
+}
+
+.profile-image {
+  width: 50px;
+  height: 50px;
+  align-self: center;
 }

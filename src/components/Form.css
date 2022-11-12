@@ -18,16 +18,16 @@
 }
 
 .input2 {
-  flex-basis: 15%;
+  flex-basis: 20%;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 }
 
 .form-button {
-  flex-basis: 15%;
+  flex-basis: 20%;
   border: none;
-  background-color: blue;
+  background-color: #0290ff;
   color: white;
   border-radius: 5px;
   padding: 10px;
