@@ -12,7 +12,7 @@ const Form = () => {
       item_id: Math.floor(Math.random() * 100),
       title,
       author,
-      category: 'any',
+      category: 'Action and Adventure',
     };
     dispatch(addBook(book));
     setTimeout(() => dispatch(fetchBooks()), 500);
@@ -21,13 +21,14 @@ const Form = () => {
   };
   return (
     <div>
-      <h1>ADD NEW BOOK</h1>
+      <h1 className="h1">ADD NEW BOOK</h1>
       <form className="form">
         <input
           type="text"
           placeholder="Book Title"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
+          className="input1"
         />
         <input
           name="authors"
@@ -35,8 +36,9 @@ const Form = () => {
           placeholder="Author"
           onChange={(e) => setAuthor(e.target.value)}
           value={author}
+          className="input2"
         />
-        <button onClick={() => handleSubmit()} type="button">Add Book</button>
+        <button className="form-button" onClick={() => handleSubmit()} type="button">Add Book</button>
       </form>
     </div>
   );

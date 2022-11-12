@@ -1,0 +1,104 @@
+* {
+  font-family: 'RobotoSlab', sans-serif;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 22px;
+  padding: 0.9rem 3.3rem 0.9rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px #ccc;
+}
+
+.left-side {
+  flex-basis: 40%;
+}
+
+.main-buttons {
+  align-items: center;
+  width: 100px;
+  border: none;
+  background-color: white;
+  color: #4386bf;
+  margin-top: 25px;
+}
+
+.main-buttons:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.progress {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid #0290ff;
+  text-align: center;
+}
+
+.current-chapter {
+  font-size: 0.813rem;
+  font-weight: 300;
+  color: var(--black-two);
+}
+
+.right-button {
+  background-color: #0290ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.main-title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+
+.author {
+  font-family: "RobotoSlab", serif;
+  margin-top: 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.category {
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
+}
+
+.circle {
+  display: flex;
+  text-align: center;
+}
+
+.percentage {
+  margin-left: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.span {
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--black-two);
+}
